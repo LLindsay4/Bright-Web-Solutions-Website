@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BrightWeb Learning Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+    .w3-hover-zoom {
+    transition: 0.3s;
+    }
+    .w3-hover-zoom:hover {
+    transform: scale(1.05);
+    }
+
+    .w3-bar {
+  padding: 12px 16px; /* increase the top & bottom spacing */
+    }
+
+    @media(min-width:993px){
+		.custom-col{
+			width:30% !important;
+		}
+	}
+
+
+	@media((min-width:601px) and (max-width:992px)) {
+		.custom-col{
+			width:70% !important;
+		}
+	}
+
+    @media(max-width:600px){
+        .custom-col{
+            width:70% !important;
+        }
+    }
+
+    .w3-sidebar{
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+</style>
+</head>
+
+<body>
+<!-- Top Navigation Bar -->
+<div class="w3-bar w3-theme w3-large">
+  <button class="w3-bar-item w3-button w3-left w3-hover-light-green" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </button>
+  <a href="https://www.brightweb.tech/" class="w3-bar-item w3-button w3-hover-light-green"><b>BrightWeb Learning Hub</b></a>
+</div>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center custom-col" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-hover-light-green" onclick="w3_close()"><h2><b></b></h2><i class="fa fa-remove"></i></button>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-light-green"><h2>Types of Websites</h2></a>
+  <a href="designprinciples.html" class="w3-bar-item w3-button w3-hover-light-green"><h2>Design Principles</h2></a>
+  <a href="response.html" class="w3-bar-item w3-button w3-hover-light-green"><h2>Feedback Form</h2></a>
+</nav>
+
+<!-- Section Title -->
+<div class="w3-content" style="max-width:1200px; padding:32px;">
+<div class="w3-padding w3-center">
+  <hr>
+  <h1>Types of Websites</h1>
+  <h4>The following resources have been provided to help you understand the different types of websites and their purposes.</h4>
+  <h4>Knowing these types ensures you can choose the right structure and features to meet your goals and engage your audience effectively.</h4>
+  <hr>
+</div>
+
+<!-- Photo Grid 1 -->
+<div class="w3-row-padding w3-center">
+    <div class="w3-quarter w3-hover-zoom">
+        <img src="Images/pexels-pixabay-47344.jpg" alt="dollar bills" style="width:100%">
+        <a href="ecommercewebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">E-commerce</a>
+    </div>
+
+    <div class="w3-quarter w3-hover-zoom">
+        <img src="Images/Green Paint .jpeg" alt="Green paint" style="width:100%">
+        <a href="portfoliowebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">Portfolio</a>
+    </div>
+
+    <div class="w3-quarter w3-hover-zoom">
+        <img src="Images/Green Diary 2.jpg" alt="Green diary" style="width:100%">
+        <a href="bloggingwebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">Blog</a>
+    </div>
+
+    <div class="w3-quarter w3-hover-zoom">
+        <img src="Images/Green Letter .jpeg" alt="Letter with stamp" style="width:100%">
+        <a href="socialnetworkingwebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">Social</a>
+    </div>
+    </div>
+
+    <!-- Photo Grid 2 -->
+    <div class="w3-row-padding w3-center w3-padding-32">
+        <div class="w3-quarter w3-hover-zoom">
+            <img src="Images/Green Newspaper .jpeg" alt="newspaper" style="width:100%">
+            <a href="newswebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">News</a>
+        </div>
+
+        <div class="w3-quarter w3-hover-zoom">
+            <img src="Images/Books .jpeg" alt="books" style="width:100%">
+            <a href="educationalwebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">Education</a>
+        </div>
+
+        <div class="w3-quarter w3-hover-zoom">
+            <img src="Images/Entertainment - Cassette .jpeg" alt="cassette" style="width:100%">
+            <a href="entertainmentwebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">Entertainment</a>
+        </div>
+
+        <div class="w3-quarter w3-hover-zoom">
+            <img src="Images/Olive Green Tie Formal.jpeg" alt="suit and tie" style="width:100%">
+            <a href="corporatewebsites.html" class="w3-button w3-theme w3-margin-top w3-hover-light-green">Corporate</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16 w3-center">
+  <h3>BrightWeb Learning Hub</h3>
+  <p>For the bright futures at Brightweb Solutions</p>
+  <p>2025 Elatt Submission</p>
+</footer>
+
+<!-- Scripting -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+</script>
+</body>
+</html>

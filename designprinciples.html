@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BrightWeb Learning Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<style>
+    .w3-hover-zoom {
+    transition: 0.3s;
+    }
+
+    .w3-hover-zoom:hover {
+    transform: scale(1.05);
+    }
+
+    .w3-bar {
+  padding: 12px 16px; /* increase the top & bottom spacing */
+    }
+
+    @media(min-width:993px){
+		.custom-col{
+			width:30% !important;
+		}
+	  }
+
+	  @media((min-width:601px) and (max-width:992px)) {
+		.custom-col{
+			width:70% !important;
+		}
+	  }
+
+ @media(max-width:600px){
+    .custom-col{
+       width:70% !important;
+    }
+    }
+
+    .w3-sidebar{
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+</style>
+</head>
+
+<body>
+<!--Top navigation bar-->
+<div class="w3-bar w3-theme w3-large">
+  <button class="w3-bar-item w3-button w3-left w3-hover-light-green" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </button>
+  <a href="https://www.brightweb.tech/" class="w3-bar-item w3-button w3-hover-light-green"><b>BrightWeb Learning Hub</b></a>
+</div>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center custom-col" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-hover-light-green" onclick="w3_close()"><h2><b></b></h2><i class="fa fa-remove"></i></button>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-light-green"><h2>Types of Websites</h2></a>
+  <a href="designprinciples.html" class="w3-bar-item w3-button w3-hover-light-green"><h2>Design Principles</h2></a>
+  <a href="response.html" class="w3-bar-item w3-button w3-hover-light-green"><h2>Feedback Form</h2></a>
+</nav>
+
+<!--Page introduction text-->
+<div class="w3-content" style="max-width:1200px; padding:32px;">
+  <div class="w3-padding w3-center">
+    <hr>
+    <h1>Design Principles</h1>
+    <h4>The following resources have been provided to help you create websites that are clear, engaging, and easy to use.</h4>
+    <h4>They cover essential fundamentals like layout, colour, and navigation to ensure your designs communicate effectively and deliver a seamless user experience across all devices.</h4>
+    <hr>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:1200px; padding:32px;">
+    <!--First row of Design Principles-->
+  <div class="w3-row-padding w3-center w3-margin-top">
+
+  <!--The Purpose -->
+  <div class="w3-third">
+    <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+      <h3>The Purpose </h3><br>
+      <img src="Images/Purpose Icon.png" alt="A target">
+      <p>A website’s purpose defines its goals, audience, and content.</p>
+      <p>Every design choice should align with that purpose to clearly communicate the message and support user engagement.</p>
+
+        <div class="w3-dropdown-hover">
+          <button class="w3-button w3-padding-16 w3-hover-light-green">
+            Resources <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+            <a href="https://www.youtube.com/watch?v=mLNSQ4v-K3g" class="w3-bar-item w3-button w3-hover-light-green" target="new">Different Types of Websites</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!--Usability-->
+  <div class="w3-third">
+    <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+      <h3>Usability</h3><br>
+      <img src="Images/Usability Icon.png" alt="A clipboard">
+      <p>Usability ensures users can easily navigate and interact with a website.</p>
+      <p>Clear navigation, strong calls-to-action, and accessible information create a user-friendly experience, while testing helps fix any issues.</p>
+        
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-padding-16 w3-hover-light-green">
+          Resources <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="https://youtu.be/st9AEPOjGpU" class="w3-bar-item w3-button w3-hover-light-green" target="new">Usability 101</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Typography-->
+  <div class="w3-third">
+    <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+      <h3>Typography</h3><br>
+      <img src="Images/Typography Icon.png" alt="The letter A">
+      <p>Typography affects a website’s readability and visual appeal.</p>
+      <p>Using consistent, well-chosen fonts, sizes, and spacing enhances design, accessibility, and brand identity.</p>
+      
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-padding-16 w3-hover-light-green">
+          Resources <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="https://www.youtube.com/watch?v=yAuUDyUC-GM" class="w3-bar-item w3-button w3-hover-light-green" target="new">The Typography Ultimate Guide</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Second Row Of Design Principles-->
+  <div class="w3-row-padding w3-center w3-margin-top">
+
+  <!--Colours-->
+  <div class="w3-third">
+    <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+      <h3>Colours</h3><br>
+      <img src="Images/Colours Icon.png" alt="A colour picker and swatches">
+      <p>Colours can evoke emotions and create a visual hierarchy on a website. </p>
+      <p>Careful consideration should be given to the colour scheme to ensure it aligns with the brand identity and appeals to the target audience.</p>
+
+      <div class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-16 w3-hover-light-green">
+        Resources <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="https://www.youtube.com/watch?v=KMS3VwGh3HY" class="w3-bar-item w3-button w3-hover-light-green" target="new">How to Choose Colors</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--White Space-->
+  <div class="w3-third">
+    <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+      <h3>White Space</h3><br>
+      <img src="Images/White Space Icon.png" alt="squares">
+      <p>Negative space refers to the empty space between design elements on a website.</p>
+      <p>Empty space between elements—reduces clutter, improves readability, highlights key content, and enhances a website’s visual appeal.</p>
+      
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-padding-16 w3-hover-light-green">
+          Resources <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="https://www.youtube.com/watch?v=vSQsAW00_Ao" class="w3-bar-item w3-button w3-hover-light-green" target="new">What is Whitespace?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Page Layout-->
+    <div class="w3-third">
+      <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+        <h3>Page Layout</h3><br>
+        <img src="Images/Page Layout Icon.png" alt="Low fidelity web page">
+        <p>The Layout of a website refers to how content is organised and displayed on each page.</p>
+        <p>A well-structured layout ensures that users can easily find the information they are looking for and navigate through the site efficiently.</p>
+        
+        <div class="w3-dropdown-hover">
+          <button class="w3-button w3-padding-16 w3-hover-light-green">
+            Resources <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+            <a href="https://youtu.be/3C_22eBWpjg" class="w3-bar-item w3-button w3-hover-light-green" target="new">How to Properly Layout A Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Third Row Of Design Principles-->
+  <div class="w3-row-padding w3-center w3-margin-top">
+
+  <!--Website Navigation-->  
+  <div class="w3-third">
+    <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+      <h3>Navigation</h3><br>
+      <img src="Images/Navigation Icon.png" alt="An arrow">
+      <p>Navigation guides users through a website and helps them find information quickly.</p>
+      <p>Clear menus, breadcrumbs, and search improve usability and engagement. Well-structured navigation also boosts SEO and content discoverability.</p>
+
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-padding-16 w3-hover-light-green">
+          Resources <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="https://youtu.be/pQo4yLAZBUI" class="w3-bar-item w3-button w3-hover-light-green" target="new">Website Navigation Best Practice</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Responsive Web Design--> 
+  <div class="w3-third">
+    <div class="w3-card w3-container w3-hover-zoom" style="min-height:460px">
+      <h3>Responsive Web Design</h3><br>
+      <img src="Images/Responsive Web Design Icon.png" alt="A computer">
+      <p>Responsive web design lets websites adapt to any device, ensuring a consistent user experience.</p>
+      <p>Using HTML, CSS, and JavaScript, layouts adjust dynamically, making sites seamless across desktops, tablets, and smartphones.</p>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-padding-16 w3-hover-light-green">
+          Resources <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="https://youtu.be/x4u1yp3Msao" class="w3-bar-item w3-button w3-hover-light-green" target="new">Guide to Responsive Web Design</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16 w3-center">
+  <h3>BrightWeb Learning Hub</h3>
+  <p>For the bright futures at Brightweb Solutions</p>
+  <p>2025 Elatt Submission</p>
+</footer>
+
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+</script>
+
+</body>
+</html>
